@@ -19,7 +19,7 @@ def userRegex(userInput, file):
         print("Nothing found.")
 
 while True:
-    os.chdir('C://Users//yourusername//folderpath') #input your own username and folder name
+    os.chdir('C://Users//yourusername//folderpath') #input your own username and folder name, what is the best effective way to set the directory to specific path os.getcwd()?
     for file in glob.glob("*.txt"):
         openFile = open(file)
         fileContent = openFile.read()
@@ -31,7 +31,7 @@ while True:
     if userQuit.upper() != "Q":
         continue
     else:
-        sys.exit()
+        sys.exit() # exit as an alternative 
 
 
 
