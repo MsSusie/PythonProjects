@@ -1,11 +1,12 @@
+# write a program with regex to search for user provided pattern
+# open a directory
+# open any .txt file that is currently in the directory
+# ask user to provide a pattern which will become the regex
+# search within .txt file for the regex
+# print results to screen
+
 import glob, os, re, sys
 from pathlib import Path
-
-# set up regex to search for user provided pattern
-# open directory
-# open any .txt file that is currently in the directory
-# use the regex
-# print results to screen
 
 def userRegex(userInput, file):
     findRegex = re.compile(userInput, re.I) # ignore case sensitive
