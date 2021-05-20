@@ -13,7 +13,7 @@ def fileFinder(folder, destination):
     # copy files and move to new folder shutil.copy()
     for folders, subFolders, filenames in os.walk(folder):
         for folder in folders:
-            for subFolder in subFolders:
+            for subFolder in subFolders: # code around here may need to be revised? for subfolders of a folder they are not copying any .txt files
                 for filename in filenames:
                     if filename.endswith('.txt'):
                         shutil.copy(filename, destination)
