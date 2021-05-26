@@ -41,7 +41,7 @@ while True:
 
                         if numberInFile != counter:  # finds the gap in the numbering by comparing file number against counter
                             renamedFile = prefix + str(counter) + suffix    # rename the file by putting together the pieces
-                            if not os.path.exists(file):
+                            if not os.path.exists(renamedFile):
                                 print(renamedFile)                              # test to see if it renamed correctly
                                 shutil.move(os.path.abspath(file), os.path.abspath(renamedFile))
                                 counter += 1
